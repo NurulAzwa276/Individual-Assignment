@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Gallery Page</title>
+    <style>
+        
+        body {
+            background-color: #bcb2d9;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 300ms;
+        }
+
+        nav a:hover {
+            background-color: #444444;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .image-box {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .image-box img {
+            width: 335px;
+            height: 300px;
+            border: 2px solid #000000;
+            border-radius: 13px;
+            box-shadow: 4px 7px 7px 0px #000000;
+            cursor: pointer;
+            transition: 400ms;
+        }
+
+        .image-box img:hover {
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+
+        .image-box p {
+            margin-top: 10px;
+            color: Black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="../INDIVIDUAL ASSIGNMENT.html">Home</a>
+        <a href="#gallery">Gallery</a> 
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="container" id="gallery">
+        <div class="image-box">
+            <img src="background 1.jpg" alt="">
+            <p>Pantai Desaru, Bandar Penawar</p>
+        </div>
+        <div class="image-box">
+            <img src="background 2.jpg" alt="">
+            <p>Masjid Al-Ghaffar, Jasin</p>
+        </div>
+        <div class="image-box">
+            <img src="background 3.jpg" alt="">
+            <p>Gunung Lang, Ipoh</p>
+        </div>
+        <div class="image-box">
+            <img src="background 4.jpg" alt="">
+            <p>Gunung Ledang, Tangkak</p>
+        </div>
+        <div class="image-box">
+            <img src="background 5.jpg" alt="">
+            <p>Masjid Sri Sendayan, Negeri Sembilan</p>
+        </div>
+        <div class="image-box">
+            <img src="background 6.jpg" alt="">
+            <p>Sekinchan, Selangor</p>
+        </div>
+    </div>
+</body>
+</html>
